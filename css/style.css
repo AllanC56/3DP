@@ -1,7 +1,21 @@
-body {
-    background-color: #fafafa;
-}
-
 .prints {
 
+}
+
+.tabs .tab a{
+    color:#7cb342;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+	background-color:transparent;
+	color #558b2f;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color: #558b2f;
+}
+.tabs .indicator {
+	background-color:#689f38;
+}
+
+#logo {
+    font-size: 40px;
 }
