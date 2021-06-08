@@ -27,3 +27,7 @@ h2 {
 h3 {
     font-weight: 275;
 }
+
+small {
+    opacity: 0.7;
+}
