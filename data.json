@@ -4,5 +4,73 @@
         "modeling": "Modeling my own 3D models using Blender (since 2012) and SolidWorks",
         "slicing": "Slicing and printing using Cura and PrusaSlicer",
         "controlling": "Remotely controlling and monitoring using Octoprint with a Raspberry Pi 4"
+    },
+    "prints":{
+        "mods":[
+            {
+                "title":"Filament guide and Cables holder",
+                "desc":"Those 2 prints screwed on the X axis module improve filament feeding and cable organisation.",
+                "image":"FilamentCablesHolders.jpeg"
+            },
+            {
+                "title":"Magnetic cooling fan holder",
+                "desc":"I printed this great 2 parts magnetic cooling fan holder. It provides easier access for filament change. It needed 8 tiny magnets so the 2 parts stick well.",
+                "image":"MagneticFanHolder.jpeg"
+            },
+            {
+                "title":"Printing bed adjusting screws",
+                "desc":"I printed those 4 enhanced adjusting screws to make fine tuning more confortable and precise than the orginal wing nuts. I put some oil so it rotates better.",
+                "image":"BedScrew.jpeg"
+            },
+            {
+                "title":"Power supply cover with power switch",
+                "desc":"I printed this large cover screwed around the power supply to hide its pins. I added a very useful power switch button.",
+                "image":"PowerSupplyButton.jpeg"
+            }
+        ],
+        "functional":[
+            {
+                "title":"Shutter crank holder",
+                "desc":"A print I did to replace a broken shutter crank holder next to a window. I needed to edit the 3D model so I didn't need to replace the original screw.",
+                "image":"ShutterFix.jpeg"
+            },
+            {
+                "title":"Key replica",
+                "desc":"A replica of a box key, it needed at least 4 prototypes to be identical to the original and fully functional, I have been using it almost daily for 2 years.",
+                "image":"CopiedKey.jpeg"
+            },
+            {
+                "title":"Google Home Mini wall mount",
+                "desc":"A print I did to hold my Google Home Mini smart speaker on the wall, sticked using double-sided adhesive, added two Ikea Fixa pads for more stability.",
+                "image":"HomeMiniWallMount.jpg"
+            },
+            {
+                "title":"Ergonomic bottle opener",
+                "desc":"I printed this useful, confortable and robust bottle opener with 100% infill. I have been using it about more than fifty times and it is still brand new.",
+                "image":"BottleOpener.jpeg"
+            }
+        ],
+        "art":[
+            {
+                "title":"Fall Guys figurine",
+                "desc":"An 8cm tall figurine printed in 3 parts of different colors, sticked together, the eyes are painted using a black marker",
+                "image":"FallGuys.jpeg"
+            },
+            {
+                "title":"Low Poly flower pot",
+                "desc":"I printed this fancy Low Poly flower pot that blends greatly with my other pots. I added a hole on the bottom on the 3D model for water evacuation.",
+                "image":"FlowerPot.jpeg"
+            },
+            {
+                "title":"Minecraft crafting table",
+                "desc":"I printed a 40x40mm empty cube to stick a papercraft model of the Minecraft crafting table around it. Thanks to this it won't get crushed anymore.",
+                "image":"MinecraftCraftingTable.jpeg"
+            },
+            {
+                "title":"Tiny Benchy boat",
+                "desc":"I printed this 12mm long Benchy to test my 3D printer ability to render details at very low scale. I used a 0.25mm nozzle, it gave pretty good results.",
+                "image":"Benchy.jpeg"
+            }
+        ]
     }
 }
