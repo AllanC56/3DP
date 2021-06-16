@@ -8,6 +8,8 @@
         <link rel="shortcut icon" type="image/jpg" href="images/3DLogo.png"/>
         <meta name="theme-color" content="#7cb342">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
@@ -46,21 +48,19 @@
                             </div>
                             <div class="card-content light-green">
                                 <!-- <span class="card-title">My 3D Printer</span> -->
-                                <span class="white-text">My current 3D Printer is an Anet A8.
-                                    I bought it in 2018 and heavily customized it since then.
-                                    I would like to evolve to a Prusa MINI+ as my next 3D Printer.</span>
+                                <span id="printer-desc" class="white-text"></span>
                             </div>
                             <div id="software" class="card-tabs">
-                                <ul class="tabs tabs-fixed-width light-green lighten-1">
-                                    <li class="tab"><a class="white-text" href="#blender">Modeling</a></li>
-                                    <li class="tab"><a class="white-text active" href="#cura">Slicing</a></li>
-                                    <li class="tab"><a class="white-text" href="#octoprint">Controling</a></li>
+                                <ul id="printing-tabs" class="tabs tabs-fixed-width light-green lighten-1">
+                                    <li class="tab"><a class="white-text" href="#modeling-desc">Modeling</a></li>
+                                    <li class="tab"><a class="white-text active" href="#slicing-desc">Slicing</a></li>
+                                    <li class="tab"><a class="white-text" href="#controlling-desc">Controlling</a></li>
                                 </ul>
                             </div>
                             <div class="card-content light-green lighten-4">
-                                <div id="blender">Modeling my own 3D models using Blender (since 2012) and SolidWorks</div>
-                                <div id="cura">Slicing and printing using Cura and PrusaSlicer</div>
-                                <div id="octoprint">Remotely controlling and monitoring using Octoprint with a Raspberry Pi 4</div>
+                                <div id="modeling-desc"></div>
+                                <div id="slicing-desc"></div>
+                                <div id="controlling-desc"></div>
                             </div>
                         </div>
                     </div>
@@ -243,6 +243,20 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript">
             M.AutoInit();
+
+            fetch('data.json')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error("HTTP error, status = " + response.status);
+                }
+                return response.json();
+            })
+            .then(function(json) {
+                $("#printer-desc").html(json.printer.desc);
+                $("#modeling-desc").html(json.printer.modeling);
+                $("#slicing-desc").html(json.printer.slicing);
+                $("#controlling-desc").html(json.printer.controlling);
+            })
         </script>
     </body>
 </html>
