@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .prints {
 
 }
@@ -36,6 +40,11 @@ h3, h4, h5 {
 .more {
     font-weight: 300;
     font-size: 1.1rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 small {
