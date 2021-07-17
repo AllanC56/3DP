@@ -3,11 +3,23 @@ html {
 }
 
 .prints {
+}
 
+.figures {
+    font-size: 25px;
+}
+
+.prints-number {
+    font-size: 20px;
+}
+
+.print-category {
+    font-size: 25px;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    min-height: 150px;
     height: auto;
 }
 
@@ -29,17 +41,12 @@ img {
     font-size: 40px;
 }
 
-h2 {
+h2, h4 {
     font-weight: 300;
 }
 
-h3, h4, h5 {
+h3, h5 {
     font-weight: 275;
-}
-
-.more {
-    font-weight: 300;
-    font-size: 1.1rem;
 }
 
 .flex {

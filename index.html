@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <title>3D Printing - Allan C.</title>
         <link rel="shortcut icon" type="image/jpg" href="images/3DLogo.png"/>
         <meta name="theme-color" content="#7cb342">
 
+        <!--Import Google Icon Font and jQuery-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <!--Import materialize.css-->
@@ -45,7 +45,7 @@
                     <div class="col offset-l3 l6 s12">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img class="responsive-img" src="images/AnetA8.jpg">
+                                <img class="responsive-img" src="images/AnetA8.jpeg">
                             </div>
                             <div class="card-content light-green">
                                 <!-- <span class="card-title">My 3D Printer</span> -->
@@ -67,19 +67,39 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col s4">
+                    <div class="center">
+                        <i class="medium light-green-text text-lighten-1 material-icons">settings_suggest</i>
+                        <p class="prints-number center light-green-text text-darken-1">More than <span id="mods-figure" class="figures">4</span> prints<br>3D Printer Mods</p>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="center">
+                        <i class="medium light-green-text text-lighten-1 material-icons">model_training</i>
+                        <p class="prints-number center light-green-text text-darken-1">More than <span id="functional-figure" class="figures">4</span> prints<br>Functional prints</p>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="center">
+                        <i class="medium light-green-text text-lighten-1 material-icons">stream</i>
+                        <p class="prints-number center light-green-text text-darken-1">More than <span id="art-figure" class="figures">4</span> prints<br>Art prints</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="divider"></div>
 
 
             <div id="mods-section" class="section">
                 <h3 class="center light-green-text text-darken-1">3D Printer Mods</h3>
                 <div id="mods-prints" class="row flex"></div>
-                <div class="row">
-                    <div class="col center s6 offset-s3 l2 offset-l5">
-                        <div class="card-panel light-green lighten-1">
-                            <span class="more center white-text">More prints on the way</span>
-                        </div>
+                <!-- <div class="row">
+                    <div class="center-align">
+                        <a class="waves-effect waves-light btn-large light-green lighten-1">More mod prints</a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="divider"></div>
 
@@ -87,13 +107,11 @@
             <div id="functional-section" class="section">
                 <h3 class="center light-green-text text-darken-1">Functional prints</h3>
                 <div id="functional-prints" class="row flex"></div>
-                <div class="row">
-                    <div class="col center s6 offset-s3 l2 offset-l5">
-                        <div class="card-panel light-green lighten-1">
-                            <span class="more center white-text">More prints on the way..</span>
-                        </div>
+                <!-- <div class="row">
+                    <div class="center-align">
+                        <a class="waves-effect waves-light btn-large light-green lighten-1">More functional prints</a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="divider"></div>
 
@@ -101,15 +119,16 @@
             <div id="art-section" class="section">
                 <h3 class="center light-green-text text-darken-1">Art prints</h3>
                 <div id="art-prints" class="row flex"></div>
-                <div class="row">
-                    <div class="col center s6 offset-s3 l2 offset-l5">
-                        <div class="card-panel light-green lighten-1">
-                            <span class="more center white-text">More prints on the way..</span>
-                        </div>
+                <!-- <div class="row">
+                    <div class="center-align">
+                        <a class="waves-effect waves-light btn-large light-green lighten-1">More art prints</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
+
+        <h4 class="center light-green-text text-darken-1">More prints on the way..</h4>
+        <br>
 
         <footer class="page-footer light-green darken-1">
             <div class="container">
@@ -143,6 +162,30 @@
         <script type="text/javascript">
             M.AutoInit();
 
+            var allPrints;
+            const defaultIndex = 4;
+            let modsIndex = defaultIndex;
+            let functionalIndex = defaultIndex;
+            let artIndex = defaultIndex;
+
+            $.getJSON('data.json', function(data) {
+                allPrints = data;
+            });
+
+            function generatePrint(image, title, description) {
+                return `<div class="col l6 s12">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img class="prints responsive-img" loading="lazy" src="${image}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">${title}</span>
+                            <p>${description}</p>
+                        </div>
+                    </div>
+                </div>`;
+            }
+
             fetch('data.json')
             .then(function(response) {
                 if (!response.ok) {
@@ -155,24 +198,25 @@
                 $("#modeling-desc").html(json.printer.modeling);
                 $("#slicing-desc").html(json.printer.slicing);
                 $("#controlling-desc").html(json.printer.controlling);
+                $("#mods-figure").html(json.prints["mods"].length);
+                $("#functional-figure").html(json.prints["functional"].length);
+                $("#art-figure").html(json.prints["art"].length);
                 $.each(json.prints, function(key, val) {
                     var section = key;
+                    // for (let i = 0; i < 4; i++) {
+                    //     var print = json.prints[section][i];
+                    //     var image = "images/" + section + "/" + print.image;
+                    //     var title = print.title;
+                    //     var description = print.desc;
+                    //     var printCard = generatePrint(image, title, description);
+                    //     $(printCard).appendTo("#" + section + "-prints");
+                    // }
+
                     $.each(this, function(key, val){
                         var image = "images/" + section + "/" + this.image;
                         var title = this.title;
                         var description = this.desc;
-                        var print =
-                        `<div class="col l6 s12">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <img class="prints" src="${image}">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title">${title}</span>
-                                    <p>${description}</p>
-                                </div>
-                            </div>
-                        </div>`;
+                        var print = generatePrint(image, title, description);
                         $(print).appendTo("#" + section + "-prints");
                     });
                 });
