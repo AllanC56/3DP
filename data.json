@@ -20,12 +20,47 @@
             {
                 "title":"Printing bed adjusting screws",
                 "desc":"I printed those 4 enhanced adjusting screws to make fine tuning more confortable and precise than the orginal wing nuts. I put some oil so it rotates better.",
-                "image":"BedScrew.jpeg"
+                "image":"BedScrews.jpeg"
             },
             {
                 "title":"Power supply cover with power switch",
                 "desc":"I printed this large cover screwed around the power supply to hide its pins. I added a very useful power switch button.",
                 "image":"PowerSupplyButton.jpeg"
+            },
+            {
+                "title":"Mosfet holder",
+                "desc":"A print to hold the Mosfet upgrade on the frame of the printer. It is now mounted next to the motherboard.",
+                "image":"MosfetHolder.jpeg"
+            },
+            {
+                "title":"Printer feet",
+                "desc":"I 3D modeled and printed custom feet for my printer. There are 2 on the front and 2 on the back, they help reducing vibrations and wobbling effect on my prints.",
+                "image":"PrinterFeet.jpeg"
+            },
+            {
+                "title":"Spool wheels",
+                "desc":"I printed those 2 spool wheels with springs so the spool rotates smoothly when printing. It is not really reliable because it keeps letting the spool fall.",
+                "image":"SpoolWheels.jpeg"
+            },
+            {
+                "title":"Spool feet",
+                "desc":"I printed this famous spool holder. It needs 4 parts and 4 bearings on which the spool rolls, more reliable than the cheap spool holder provided in the box.",
+                "image":"SpoolFeet.jpeg"
+            },
+            {
+                "title":"T-Corners",
+                "desc":"I printed those 2 T-Corners to attach to the frame of the printer. It helps reducing the frame vibrations by reinforcing it.",
+                "image":"TCorners.jpeg"
+            },
+            {
+                "title":"Semi fan duct",
+                "desc":"I printed this semi fan duct to improve nozzle and fuzed filament cooling. It greatly enhance print quality, a must have.",
+                "image":"SemiFanDuct.jpeg"
+            },
+            {
+                "title":"Printing steps indicator",
+                "desc":"This print allows to monitor the step rotation of the filament feeding motor, to detect eventual malfunctions and monitor feeding flow.",
+                "image":"PrintingStepsIndicator.jpeg"
             }
         ],
         "functional":[
@@ -42,18 +77,48 @@
             {
                 "title":"Google Home Mini wall mount",
                 "desc":"A print I did to hold my Google Home Mini smart speaker on the wall, sticked using double-sided adhesive, added two Ikea Fixa pads for more stability.",
-                "image":"HomeMiniWallMount.jpg"
+                "image":"HomeMiniWallMount.jpeg"
             },
             {
                 "title":"Ergonomic bottle opener",
                 "desc":"I printed this useful, confortable and robust bottle opener with 100% infill. I have been using it about more than fifty times and it is still brand new.",
                 "image":"BottleOpener.jpeg"
+            },
+            {
+                "title":"Custom cable organiser",
+                "desc":"I 3D modeled and printed this custom cable organiser so the cables under my desk are fixed and they do not hang.",
+                "image":"CableOrganiser.jpeg"
+            },
+            {
+                "title":"Smartphone holder",
+                "desc":"I printed this useful phone holder so my phone stands in view. It needed some additionnal mass inside to cope with my heavy phone.",
+                "image":"PhoneHolder.jpeg"
+            },
+            {
+                "title":"Nozzles Case",
+                "desc":"I printed this useful nozzle case to store the different sizes. Now I cannot lose one of them anymore.",
+                "image":"NozzlesCase.jpeg"
+            },
+            {
+                "title":"Camera ball joint",
+                "desc":"I 3D modeled and printed this custom ball joint for my Xiaomi camera so it can rotate on 3 axes instead of just one. It has a hole to fix it on the wall with a screw.",
+                "image":"CameraBallJoint.jpeg"
+            },
+            {
+                "title":"Cable holder",
+                "desc":"I printed this useful cable holder to hold up to 2 cables. I sticked it on the furniture next to my desk.",
+                "image":"CableHolder.jpeg"
+            },
+            {
+                "title":"Filament pin",
+                "desc":"I printed this useful filament pin to put on the spool, so the filament end does not move and get mixed up.",
+                "image":"FilamentPin.jpeg"
             }
         ],
         "art":[
             {
                 "title":"Fall Guys figurine",
-                "desc":"An 8cm tall figurine printed in 3 parts of different colors, sticked together, the eyes are painted using a black marker",
+                "desc":"An 8cm tall figurine printed in 3 parts of different colors, sticked together, the eyes are painted using a black marker.",
                 "image":"FallGuys.jpeg"
             },
             {
@@ -70,6 +135,71 @@
                 "title":"Tiny Benchy boat",
                 "desc":"I printed this 12mm long Benchy to test my 3D printer ability to render details at very low scale. I used a 0.25mm nozzle, it gave pretty good results.",
                 "image":"Benchy.jpeg"
+            },
+            {
+                "title":"Big screw",
+                "desc":"I printed this big screw originally for the Y axis belt tensioner but it was too short so I converted it to decoration.",
+                "image":"Screw.jpeg"
+            },
+            {
+                "title":"XYZ Calibration cubes",
+                "desc":"Those 10mm cubes are meant to be printed to test the printing quality and details. It also has a decorative aspect. Ranked from left to right in printing quality.",
+                "image":"CalibrationCubes.jpeg"
+            },
+            {
+                "title":"Minecraft Pickaxe",
+                "desc":"I printed and sanded this small Minecraft pickaxe. It has a hole to use it as a keychain but I dont like to overload my key ring.",
+                "image":"MinecraftPickaxe.jpeg"
+            },
+            {
+                "title":"Coffee molecule",
+                "desc":"This little print represents the caffeine molecule. It can also be used as a keychain but its shape is impractical.",
+                "image":"CoffeeMolecule.jpeg"
+            },
+            {
+                "title":"Lego 2x2 replica",
+                "desc":"I printed those 2 little 2x2 Lego blocks at the same scale as the original. It needs to be very close to the original to be used with real ones.",
+                "image":"Lego.jpeg"
+            },
+            {
+                "title":"Mini figther jet",
+                "desc":"I printed this mini realistic figther jet. The wings can be deployed and retract. It was printed in one piece",
+                "image":"MiniPlane.jpeg"
+            },
+            {
+                "title":"Mini Low Poly Animal Figurines",
+                "desc":"I printed those 3 animal figurines in low poly style. There is a wolf, a little cat and a tiny rabbit. Those prints are very detailed and needed long print time.",
+                "image":"MiniLowPolyAnimals.jpeg"
+            },
+            {
+                "title":"Low Poly The Thinker statue",
+                "desc":"I printed this low poly style The Thiker statue by Auguste Rodin. I wanted to be very detailed so it needed an important print time.",
+                "image":"ThinkerStatue.jpeg"
+            },
+            {
+                "title":"Git Logo",
+                "desc":"I 3D modeled and printed this simple representation of the Git logo. I enabled the ironing setting for the top layer for better results.",
+                "image":"GitLogo.jpeg"
+            },
+            {
+                "title":"QR Codes",
+                "desc":"I generated and printed those 3 QR Codes using grey and black filament on top. It needed 2 prototypes before giving a good result (the one on top).",
+                "image":"QRCodes.jpeg"
+            },
+            {
+                "title":"Mini tank turret",
+                "desc":"This print represents the turret of the American M5A1 Stuart light tank. I wanted it to be very detailed so it took a while to print.",
+                "image":"TankTurret.jpeg"
+            },
+            {
+                "title":"HP Omen logo",
+                "desc":"I printed this logo to customise the back of my HP Omen laptop, but it turned out to be to too thick and impractical so I use it as decoration.",
+                "image":"OmenLogo.jpeg"
+            },
+            {
+                "title":"Mini pistol",
+                "desc":"I printed this respresentation of the 1911 pistol at a very low scale, this 40mm print is of course dummy. It is just a decoration.",
+                "image":"MiniPistol.jpeg"
             }
         ]
     }
