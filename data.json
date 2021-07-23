@@ -48,6 +48,11 @@
                 "image":"SpoolFeet.jpeg"
             },
             {
+                "title":"Pen Holder",
+                "desc":"A print that allows the printer to 2D print on a sheet of paper by holding a pen next to the printing head. It needs a specific gcode with only one layer.",
+                "image":"PenHolder.jpeg"
+            },
+            {
                 "title":"T-Corners",
                 "desc":"I printed those 2 T-Corners to attach to the frame of the printer. It helps reducing the frame vibrations by reinforcing it.",
                 "image":"TCorners.jpeg"
@@ -108,6 +113,11 @@
                 "title":"Cable holder",
                 "desc":"I printed this useful cable holder to hold up to 2 cables. I sticked it on the furniture next to my desk.",
                 "image":"CableHolder.jpeg"
+            },
+            {
+                "title":"Smartwatch Stand",
+                "desc":"I printed this useful smartwatch stand to hold my LG Watch Style. It tilts the watch 45° so it is easier to read the time by night.",
+                "image":"SmartwatchStand.jpeg"
             },
             {
                 "title":"Filament pin",
