@@ -70,8 +70,8 @@
             <div class="row">
                 <div class="col s4">
                     <div class="center">
-                        <i class="medium light-green-text text-lighten-1 material-icons">settings_suggest</i>
-                        <p class="prints-number center light-green-text text-darken-1">More than <span id="mods-figure" class="figures">4</span> prints<br>3D Printer Mods</p>
+                        <i class="medium light-green-text text-lighten-1 material-icons">stream</i>
+                        <p class="prints-number center light-green-text text-darken-1">More than <span id="art-figure" class="figures">4</span> prints<br>Art prints</p>
                     </div>
                 </div>
                 <div class="col s4">
@@ -82,8 +82,8 @@
                 </div>
                 <div class="col s4">
                     <div class="center">
-                        <i class="medium light-green-text text-lighten-1 material-icons">stream</i>
-                        <p class="prints-number center light-green-text text-darken-1">More than <span id="art-figure" class="figures">4</span> prints<br>Art prints</p>
+                        <i class="medium light-green-text text-lighten-1 material-icons">settings_suggest</i>
+                        <p class="prints-number center light-green-text text-darken-1">More than <span id="mods-figure" class="figures">4</span> prints<br>3D Printer Mods</p>
                     </div>
                 </div>
             </div>
@@ -91,12 +91,12 @@
             <div class="divider"></div>
 
 
-            <div id="mods-section" class="section">
-                <h3 class="center light-green-text text-darken-1">3D Printer Mods</h3>
-                <div id="mods-prints" class="row flex"></div>
+            <div id="art-section" class="section">
+                <h3 class="center light-green-text text-darken-1">Art prints</h3>
+                <div id="art-prints" class="row flex"></div>
                 <!-- <div class="row">
                     <div class="center-align">
-                        <a class="waves-effect waves-light btn-large light-green lighten-1">More mod prints</a>
+                        <a class="waves-effect waves-light btn-large light-green lighten-1">More art prints</a>
                     </div>
                 </div> -->
             </div>
@@ -115,15 +115,16 @@
             <div class="divider"></div>
 
 
-            <div id="art-section" class="section">
-                <h3 class="center light-green-text text-darken-1">Art prints</h3>
-                <div id="art-prints" class="row flex"></div>
+            <div id="mods-section" class="section">
+                <h3 class="center light-green-text text-darken-1">3D Printer Mods</h3>
+                <div id="mods-prints" class="row flex"></div>
                 <!-- <div class="row">
                     <div class="center-align">
-                        <a class="waves-effect waves-light btn-large light-green lighten-1">More art prints</a>
+                        <a class="waves-effect waves-light btn-large light-green lighten-1">More mod prints</a>
                     </div>
                 </div> -->
             </div>
+
         </div>
 
         <h4 class="center light-green-text text-darken-1">More prints on the way..</h4>
@@ -163,9 +164,9 @@
 
             var allPrints;
             const defaultIndex = 4;
-            let modsIndex = defaultIndex;
-            let functionalIndex = defaultIndex;
             let artIndex = defaultIndex;
+            let functionalIndex = defaultIndex;
+            let modsIndex = defaultIndex;
 
             $.getJSON('data.json', function(data) {
                 allPrints = data;
@@ -197,9 +198,9 @@
                 $("#modeling-desc").html(json.printer.modeling);
                 $("#slicing-desc").html(json.printer.slicing);
                 $("#controlling-desc").html(json.printer.controlling);
-                $("#mods-figure").html(json.prints["mods"].length);
-                $("#functional-figure").html(json.prints["functional"].length);
                 $("#art-figure").html(json.prints["art"].length);
+                $("#functional-figure").html(json.prints["functional"].length);
+                $("#mods-figure").html(json.prints["mods"].length);
                 $.each(json.prints, function(key, val) {
                     var section = key;
                     // for (let i = 0; i < 4; i++) {
