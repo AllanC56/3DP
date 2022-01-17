@@ -1,9 +1,9 @@
 {
     "printer":{
-        "desc": "My current 3D Printer is an Anet A8. I bought it in 2018 and heavily customized it since then. I would like to evolve to a Prusa MINI+ as my next 3D Printer.",
+        "desc": "My current 3D Printer is an Anet A8. I bought it in 2018 and heavily customized it since then. I have reached more than 500 prints and hundreds of hours of print time. I would like to evolve to a Prusa MINI+ as my next 3D Printer.",
         "modeling": "Modeling my own 3D models using Blender (since 2012) and SolidWorks",
-        "slicing": "Slicing and printing using Cura and PrusaSlicer",
-        "controlling": "Remotely controlling and monitoring using Octoprint with a Raspberry Pi 4"
+        "slicing": "Slicing my 3D model files using Cura and PrusaSlicer",
+        "printing": "Printing remotely and monitoring using Octoprint with a Raspberry Pi 4"
     },
     "prints":{
         "art":[
@@ -34,7 +34,7 @@
             },
             {
                 "title":"XYZ Calibration cubes",
-                "desc":"Those 10mm cubes are meant to be printed to test the printing quality and details. It also has a decorative aspect. Ranked from left to right in printing quality.",
+                "desc":"Those 10mm cubes are meant to be printed to test the printing quality and details. It also has a decorative aspect. Ranked from left to right on printing quality.",
                 "image":"CalibrationCubes.jpeg"
             },
             {
@@ -115,6 +115,11 @@
                 "image":"BottleOpener.jpeg"
             },
             {
+                "title":"Pliers Handles",
+                "desc":"I printed these handles replacement for my pliers, the old TPU ones were worn out, now they are PLA and made to last, kind of like a Facom tool.",
+                "image":"PliersHandles.jpeg"
+            },
+            {
                 "title":"Custom cable organiser",
                 "desc":"I 3D modeled and printed this custom cable organiser so the cables under my desk are fixed and they do not hang.",
                 "image":"CableOrganiser.jpeg"
@@ -172,14 +177,14 @@
                 "image":"PowerSupplyButton.jpeg"
             },
             {
-                "title":"Mosfet holder",
-                "desc":"A print to hold the Mosfet upgrade on the frame of the printer. It is now mounted next to the motherboard.",
-                "image":"MosfetHolder.jpeg"
+                "title":"Printing steps indicator",
+                "desc":"This print allows to monitor the step rotation of the filament feeding motor, to detect eventual malfunctions and monitor feeding flow.",
+                "image":"PrintingStepsIndicator.jpeg"
             },
             {
-                "title":"Printer feet",
-                "desc":"I 3D modeled and printed custom feet for my printer. There are 2 on the front and 2 on the back, they help reducing vibrations and wobbling effect on my prints.",
-                "image":"PrinterFeet.jpeg"
+                "title":"Printer hold",
+                "desc":"I 3D modeled and printed custom hold for my printer. There are 2 on the front and 2 on the back, they reduce vibrations and wobbling for better prints.",
+                "image":"PrinterHold.jpeg"
             },
             {
                 "title":"Spool wheels",
@@ -197,6 +202,11 @@
                 "image":"PenHolder.jpeg"
             },
             {
+                "title":"Mosfet holder",
+                "desc":"A print to hold the Mosfet upgrade on the frame of the printer. It is now mounted next to the motherboard.",
+                "image":"MosfetHolder.jpeg"
+            },
+            {
                 "title":"T-Corners",
                 "desc":"I printed those 2 T-Corners to attach to the frame of the printer. It helps reducing the frame vibrations by reinforcing it.",
                 "image":"TCorners.jpeg"
@@ -207,9 +217,9 @@
                 "image":"SemiFanDuct.jpeg"
             },
             {
-                "title":"Printing steps indicator",
-                "desc":"This print allows to monitor the step rotation of the filament feeding motor, to detect eventual malfunctions and monitor feeding flow.",
-                "image":"PrintingStepsIndicator.jpeg"
+                "title":"Printer feet",
+                "desc":"I printed these feet to stabilize my printer. There are 6 of them, with anti-vibration pads to help reducing vibrations and wobbling effect on my prints.",
+                "image":"PrinterFeet.jpeg"
             }
         ]
     }
