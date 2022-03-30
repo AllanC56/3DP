@@ -1,6 +1,6 @@
 {
     "printer":{
-        "desc": "My current 3D Printer is an Anet A8. I bought it in 2018 and heavily customized it since then. I have reached more than 500 prints and hundreds of hours of print time. I would like to evolve to a Prusa MINI+ as my next 3D Printer.",
+        "desc": "My current 3D Printer is an Anet A8. I bought it in 2018 and heavily customized it since then. I have reached more than 1500 prints and thousands of hours of print time. I would like to evolve to an Ender 3v2 as my next 3D Printer.",
         "modeling": "Modeling my own 3D models using Blender (since 2012) and SolidWorks",
         "slicing": "Slicing my 3D model files using Cura and PrusaSlicer",
         "printing": "Printing remotely and monitoring using Octoprint with a Raspberry Pi 4"
